@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-MAINTAINER Samuele Bistoletti <samuele.bistoletti@gmail.com>
+MAINTAINER William Gill <william.gill@anomalous.dev>
 
 ENV ARCH amd64
 #ENV ARCH armhf
@@ -8,10 +8,10 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV LANG C.UTF-8
 
 # Default versions
-ENV TELEGRAF_VERSION 1.14.3-1
-ENV INFLUXDB_VERSION 1.8.0
-ENV GRAFANA_VERSION  6.7.4
-ENV CHRONOGRAF_VERSION 1.8.4
+ENV TELEGRAF_VERSION 1.17.0
+ENV INFLUXDB_VERSION 2.0.3
+ENV GRAFANA_VERSION  7.3.6
+ENV CHRONOGRAF_VERSION 1.8.9.1
 
 # Database Defaults
 ENV INFLUXDB_GRAFANA_DB datasource

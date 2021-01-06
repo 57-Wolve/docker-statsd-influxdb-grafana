@@ -5,7 +5,7 @@ machine:
 dependencies:
   override:
     - docker info
-    - docker build -t samuelebistoletti/docker-statsd-influxdb-grafana .
+    - docker build -t 57wolve/docker-statsd-influxdb-grafana .
 
 test:
   override:

@@ -1,18 +1,14 @@
 # Docker Image with Telegraf (StatsD), InfluxDB and Grafana
 
-:facepunch: Battle-tested
-
-[![CircleCI](https://circleci.com/gh/samuelebistoletti/docker-statsd-influxdb-grafana.svg?style=svg)](https://circleci.com/gh/samuelebistoletti/docker-statsd-influxdb-grafana)
-
 ## Versions
 
 ### Warning, breaking change: upgrade from version 1.0.x of this image is not supported, all persisted data in volumes will be lost if you delete the container.
 
-* Docker Image:      2.3.0
+* Docker Image:      2.5.0
 * Ubuntu:            18.04
-* InfluxDB:          1.7.10
-* Telegraf (StatsD): 1.13.3-1
-* Grafana:           6.6.2
+* InfluxDB:          2.0.3
+* Telegraf (StatsD): 1.17.0
+* Grafana:           7.3.6
 
 ## Quick Start
 

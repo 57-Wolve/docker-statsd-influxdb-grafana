@@ -65,7 +65,7 @@ RUN /tmp/setup_mysql.sh
 
 # Install InfluxDB
 RUN wget https://dl.influxdata.com/influxdb/releases/influxdb2_${INFLUXDB_VERSION}_${ARCH}.deb && \
-	dpkg -i influxdb2_${INFLUXDB_VERSION}_${ARCH}.deb && rm influxdb_${INFLUXDB_VERSION}_${ARCH}.deb
+	dpkg -i influxdb2_${INFLUXDB_VERSION}_${ARCH}.deb && rm influxdb2_${INFLUXDB_VERSION}_${ARCH}.deb
 
 # Configure InfluxDB
 COPY influxdb/influxdb.conf /etc/influxdb/influxdb.conf

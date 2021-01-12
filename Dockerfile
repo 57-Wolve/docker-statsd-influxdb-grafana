@@ -9,7 +9,7 @@ ENV LANG C.UTF-8
 
 # Default versions
 ENV TELEGRAF_VERSION 1.17.0-1
-ENV INFLUXDB_VERSION 2.0.3
+ENV INFLUXDB_VERSION 1.8.3
 ENV GRAFANA_VERSION  7.3.6
 ENV CHRONOGRAF_VERSION 1.8.9.1
 
@@ -64,8 +64,8 @@ COPY scripts/setup_mysql.sh /tmp/setup_mysql.sh
 RUN /tmp/setup_mysql.sh
 
 # Install InfluxDB
-RUN wget https://dl.influxdata.com/influxdb/releases/influxdb2_${INFLUXDB_VERSION}_${ARCH}.deb && \
-	dpkg -i influxdb2_${INFLUXDB_VERSION}_${ARCH}.deb && rm influxdb2_${INFLUXDB_VERSION}_${ARCH}.deb
+RUN wget https://dl.influxdata.com/influxdb/releases/influxdb_${INFLUXDB_VERSION}_${ARCH}.deb && \
+	dpkg -i influxdb_${INFLUXDB_VERSION}_${ARCH}.deb && rm influxdb_${INFLUXDB_VERSION}_${ARCH}.deb
 
 # Configure InfluxDB
 COPY influxdb/influxdb.conf /etc/influxdb/influxdb.conf

@@ -6,7 +6,7 @@
 
 * Docker Image:      2.5.0
 * Ubuntu:            18.04
-* InfluxDB:          2.0.3
+* InfluxDB:          1.8.3
 * Telegraf (StatsD): 1.17.0
 * Grafana:           7.3.6
 
